@@ -31,7 +31,7 @@
     <div class="px-10 sm:px-20 parts-accessories">
       <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Parts / Accessories</div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <PartCard v-for="(part, index) in parts" v-bind:key="index" 
           :title="part.title" 
           :description="part.description" 
