@@ -37,9 +37,10 @@ export default {
   .nav-bar-wrapper {
     max-width: 2000px;
   }
-  
+
   .kaly-logo {
     max-width: 250px;
+    max-height: 64px;
     width: 100%;
     height: fit-content;
   }
