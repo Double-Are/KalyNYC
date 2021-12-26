@@ -1,18 +1,18 @@
 <template>
-  <div class="hero-wrapper grid grid-cols-3 items-center w-full fixed py-4 px-20 z-30">
+  <div class="nav-bar-wrapper grid grid-cols-1 lg:grid-cols-1 items-center w-full fixed py-8 z-30">
     <div class="gradient-nav-bar absolute w-full h-full z-0"></div>
-    <div class="z-10">
+    <!--<div class="z-10">
       <ul class="text-2xl text-gray-100 flex">
         <li class="mr-5">Products</li> 
         <li>Contact</li>
       </ul>
-    </div>
-    <div class="flex place-content-center z-10">
+    </div>-->
+    <div class="flex z-10 justify-self-center">
       <img class="kaly-logo" :src="Kaly" />
     </div>
-    <div class="flex place-content-end z-10">
+    <!--<div class="flex place-content-end z-10">
       <img class="cart-logo" :src="Cart" />
-    </div>
+    </div>-->
   </div>  
 </template>
 
@@ -21,7 +21,7 @@ import Kaly from '@/assets/Kaly Logo.png'
 import Cart from '@/assets/cart.png'
 
 export default {
-  name: 'Hero',
+  name: 'NavBar',
   props: {},
   data() {
     return {
@@ -39,6 +39,8 @@ export default {
     width: 100%;
     height: fit-content;
   }
+
+  
 
   .cart-logo {
     width: 45px;

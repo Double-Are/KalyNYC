@@ -1,5 +1,5 @@
 <template>
-  <div class="kalynyc-wrapper">
+  <div class="kalynyc-wrapper w-full">
     <Navbar />
     <Hero />
     <div class="kaly-impact my-20 px-20"><img :src="KalyNYC" /></div>
@@ -12,12 +12,12 @@
     <div class="mb-16">
       <BoardView :board="boards.xl50" right/>
     </div>
-    <div class="grid grid-cols-2 gap-10 p-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-20">
       <div class="w-full">
         <SquareCard class="mb-10" :img="SomethingBeautifulCard" title="Something Beautiful Tee" href=""/>
-        <SquareCard class="mb-10" :img="BDampersCard" title="B_Dampers" href=""/>
+        <SquareCard class="mb:mb-10" :img="BDampersCard" title="B_Dampers" href=""/>
       </div>
-      <div class="mt-20">
+      <div class="md:mt-20">
         <SquareCard class="mb-10" :img="XL20Card" title="XL 2.0" href=""/>
         <SquareCard class="mb-10" :img="XLDeckCard" title="XL Deck" href=""/>
       </div>
@@ -28,10 +28,10 @@
       <img class="w-full" :src="FindYourAdventure" />
     </div>
 
-    <div class="px-20 parts-accessories">
-      <div class="text-7xl font-medium mb-10">Parts / Accessories</div>
+    <div class="px-10 sm:px-20 parts-accessories">
+      <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Parts / Accessories</div>
 
-      <div class="grid grid-cols-3 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-8">
         <PartCard v-for="(part, index) in parts" v-bind:key="index" 
           :title="part.title" 
           :description="part.description" 

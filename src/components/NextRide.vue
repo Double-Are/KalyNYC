@@ -1,7 +1,7 @@
 <template>
-  <div class="next-ride-wrapper flex">
-    <div class="text-5xl font-bold mr-4">What will be your next ride?</div>
-    <div class="grid grid-cols-3 gap-6">
+  <div class="next-ride-wrapper sm:grid md:flex">
+    <div class="text-5xl font-bold mr-4 mb-6">What will be your next ride?</div>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
       <div class="xl-collection-product-square">
         <img :src="XLRSquare" />
         <div class="px-10 py-4 text-4xl">XL-R</div>
