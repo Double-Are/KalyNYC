@@ -34,13 +34,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+  .nav-bar-wrapper {
+    max-width: 2000px;
+  }
+  
   .kaly-logo {
     max-width: 250px;
     width: 100%;
     height: fit-content;
   }
-
-  
 
   .cart-logo {
     width: 45px;
