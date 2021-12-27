@@ -1,11 +1,13 @@
 <template>
-  <div class="part-card-wrapper grid grid-cols-2 gap-4 relative mb-4">
-    <div class="bg-center parts-img shadow-lg" :style="{ 'background-image': `url(${img})` }"></div>
-    <div>
-      <div class="font-bold text-lg">{{title}}</div>
-      <div class="text-sm mb-4">{{description}}</div>
-      <div><a :href="href" target="_blank">More Info</a></div>
-    </div>
+  <div class="part-card-wrapper relative mb-4">
+    <a class="grid grid-cols-2 gap-4" :href="href" target="_blank">
+      <div class="bg-center parts-img shadow-lg" :style="{ 'background-image': `url(${img})` }"></div>
+      <div>
+        <div class="font-bold text-lg">{{title}}</div>
+        <div class="text-sm mb-4">{{description}}</div>
+        <div class="text-sm underline underline-offset">More Info ></div>
+      </div>
+    </a>
   </div>
 </template>
 
@@ -51,5 +53,9 @@ export default {
   .gradient-nav-bar {
     background: rgb(0,0,0);
     background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(9,9,121,0) 20%, rgba(6,6,75,0) 70%, rgba(0,0,0,1) 100%);
+  }
+
+  .underline-offset {
+    text-underline-offset: 2px;
   }
 </style>

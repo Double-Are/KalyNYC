@@ -25,7 +25,7 @@ export default {
           description: `XL-R is our most advanced esk8 yet.
           Designed to satisfy all the requirements of todays riders and pushing the boundaries of what is possible on esk8, gone are the days of compromising and settling for one riding style or another.
           Free yourself, Advance to the future.`,
-          orderLink: '',
+          orderLink: 'https://www.kaly.nyc/',
           specs: {
             battery: {
               title: 'Battery',
@@ -107,7 +107,7 @@ export default {
           title: 'XL50',
           slogan: 'The Street Carving Dream',
           description: 'The XL50  is the culmination of our high performance modular system that started with the XL2.0 Based on our mix terrain Carver architecture, the XL50 is a street carving DREAM, while packing excess power and versatility to outperform any terrain or condition.',
-          orderLink: '',
+          orderLink: 'https://www.kaly.nyc/',
           specs: {
             battery: {
               primary: '12S-8P'
@@ -185,7 +185,7 @@ export default {
           title: 'XL2.0',
           slogan: 'Big Power. Bite sized.',
           description: 'This XL 2.0 has 6396-190Kv motors, a new modular and servicable 12S-4P battery pack. It shares the same redesigned enclosure as the XL50.',
-          orderLink: '',
+          orderLink: 'https://www.kaly.nyc/',
           specs: {
             battery: {
               primary: '12S-4P'
@@ -245,39 +245,39 @@ export default {
         {
           title: 'Phatty Tire 200x75',
           description: 'New 200 x 75 mm Phatty tires. Insane grip & smooth ride over rough pavement while also providing superb stability at high speed.',
-          href: '',
+          href: 'https://www.kaly.nyc/product-page/phatty-tire-200x75',
           img: 'https://static.wixstatic.com/media/201c1e_1ebd0fcad03d4960b1e1939acc93e64a~mv2.jpg/v1/fill/w_1511,h_850,al_c,q_85/201c1e_1ebd0fcad03d4960b1e1939acc93e64a~mv2.webp'
         },
         {
           title: 'V-Ring',
           description: 'V-Ring for Gear Drive. Compatible with all Gear drives.',
-          href: '',
+          href: 'https://www.kaly.nyc/product-page/v-ring',
           img: 'https://static.wixstatic.com/media/201c1e_4c3e6fdfe2724d448c93375bfce76d3b~mv2.jpg/v1/fill/w_450,h_450,al_c,q_80,usm_0.66_1.00_0.01/201c1e_4c3e6fdfe2724d448c93375bfce76d3b~mv2.webp'
         },
         {
           title: 'Angular Contact Bearings',
           description: 'Angular contact ball bearings have inner and outer ring raceways that are displaced relative to each other in the direction of the bearing axis.',
-          href: '',
+          href: 'https://www.kaly.nyc/product-page/angular-contact-bearings',
           img: 'https://static.wixstatic.com/media/201c1e_0f04257d0aa74375931e4ff0c4c04f1f~mv2_d_2194_1234_s_2.jpg/v1/fill/w_1960,h_1102,al_c,q_85,usm_0.66_1.00_0.01/201c1e_0f04257d0aa74375931e4ff0c4c04f1f~mv2_d_2194_1234_s_2.webp'
         },
         {
           title: '40T Helical Gear',
           description: 'Replacement for quick disconnect 40T Helical gear for wheel.',
-          href: '',
+          href: 'https://www.kaly.nyc/product-page/40t-helical-gear-replacement',
           img: 'https://static.wixstatic.com/media/201c1e_128d7894dde040fbb7a721e54bd39c85~mv2_d_1306_1306_s_2.jpg/v1/fill/w_450,h_450,al_c,q_80,usm_0.66_1.00_0.01/201c1e_128d7894dde040fbb7a721e54bd39c85~mv2_d_1306_1306_s_2.webp'
         },
         {
           title: 'V1 40T/10T Straight Cut Gear',
           description: 'Replacement for quick disconnect 40 teeth straight cut gear for a wheel.Compatible only with V1 Straight cut gear drive.',
-          href: '',
+          href: 'https://www.kaly.nyc/product-page/40t-straight-cut-gear-v1',
           img: 'https://static.wixstatic.com/media/201c1e_94035f66694a45f5a2b167ff4ff10646~mv2_d_1512_1512_s_2.jpg/v1/fill/w_1512,h_850,al_c,q_85/201c1e_94035f66694a45f5a2b167ff4ff10646~mv2_d_1512_1512_s_2.webp'
         },
-        {
-          title: 'Balance for XL-R',
-          description: 'Angular contact ball bearings have inner and outer ring raceways that are displaced relative to each other in the direction of the bearing axis.',
-          href: '',
-          img: 'https://static.wixstatic.com/media/201c1e_3372c3614d9a4913b9c3d75db1a0229b~mv2.jpg/v1/fill/w_450,h_450,al_c,q_80,usm_0.66_1.00_0.01/201c1e_3372c3614d9a4913b9c3d75db1a0229b~mv2.webp'
-        }
+        // {
+        //   title: 'Balance for XL-R',
+        //   description: 'Angular contact ball bearings have inner and outer ring raceways that are displaced relative to each other in the direction of the bearing axis.',
+        //   href: '',
+        //   img: 'https://static.wixstatic.com/media/201c1e_3372c3614d9a4913b9c3d75db1a0229b~mv2.jpg/v1/fill/w_450,h_450,al_c,q_80,usm_0.66_1.00_0.01/201c1e_3372c3614d9a4913b9c3d75db1a0229b~mv2.webp'
+        // }
       ]
     }
   }

@@ -17,9 +17,9 @@
             <div class="text-2xl font-bold justify-self-end">${{board.price}}</div>
           </div>
           <div class="flex justify-end">
-            <div class="rounded-full bg-black text-white flex justify-center py-2 w-1/3">
-              <a href="">Order Now</a>
-            </div>
+            <a class="rounded-full bg-black text-white flex justify-center py-2 w-1/3" :href="board.orderLink" target="_blank">
+              Order Now
+            </a>
           </div>
         </div>
       </div>

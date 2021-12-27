@@ -1,10 +1,10 @@
 <template>
   <div class="square-card-wrapper">
-    <div class="relative">
+    <a :href="href" class="block relative">
       <div class="absolute p-8 text-white text-3xl font-bold">{{title}}</div>
       <img :src="img" class="w-full">
       <div v-if="!noView" class="absolute bottom-24 p-8 text-white text-lg">View Now</div>
-    </div>
+    </a>
   </div>
 </template>
 
@@ -20,6 +20,9 @@ export default {
     },
     noView: {
       type: Boolean
+    },
+    href: {
+      type: String
     }
   },
   data() {

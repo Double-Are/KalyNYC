@@ -14,12 +14,12 @@
     </div>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-20">
       <div class="w-full">
-        <SquareCard class="mb-10" :img="SomethingBeautifulCard" title="Something Beautiful Tee" href=""/>
-        <SquareCard class="mb:mb-10" :img="BDampersCard" title="B_Dampers" href=""/>
+        <SquareCard class="mb-10" :img="SomethingBeautifulCard" title="Something Beautiful Tee" href="https://www.kaly.nyc/product-page/something-beautiful-tee"/>
+        <SquareCard class="mb:mb-10" :img="BDampersCard" title="B_Dampers" href="https://www.kaly.nyc/product-page/b-dampers"/>
       </div>
       <div class="md:mt-20">
-        <SquareCard class="mb-10" :img="XL20Card" title="XL 2.0" href=""/>
-        <SquareCard class="mb-10" :img="XLDeckCard" title="XL Deck" href=""/>
+        <SquareCard class="mb-10" :img="XL20Card" title="XL 2.0" href="https://www.kaly.nyc/product-page/xl2-0"/>
+        <SquareCard class="mb-10" :img="XLDeckCard" title="XL Deck" href="https://www.kaly.nyc/product-page/xl-deck"/>
       </div>
     </div>
 
