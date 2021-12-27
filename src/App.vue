@@ -9,7 +9,6 @@
 import KalyXLR1 from '@/assets/KalyXLR1.jpg'
 import KalyXLR2 from '@/assets/KalyXLR2.webp'
 import KalyXL501 from '@/assets/KalyXL501.webp'
-import XLRTall from '@/assets/XLR-Tall.jpg'
 import Footer from '@/components/Footer'
 
 export default {
@@ -75,11 +74,11 @@ export default {
           products: [
             {
               main: true,
-              src: XLRTall
+              src: 'https://static.wixstatic.com/media/201c1e_2e82df953de54b169bd6bc63cd39ba2a~mv2.jpg/v1/crop/x_0,y_663,w_3512,h_1840/fill/w_1370,h_718,al_c,q_85,usm_0.66_1.00_0.01/IMG_8114.webp'
             },
             {
               main: true,
-              src: KalyXLR1
+              src: 'https://static.wixstatic.com/media/201c1e_968baa238b17465791cc613fff99108e~mv2.jpg/v1/crop/x_279,y_274,w_3427,h_1925/fill/w_1304,h_732,al_c,q_85,usm_0.66_1.00_0.01/IMG_8090.webp'
             },
             {
               src: 'https://static.wixstatic.com/media/201c1e_2739ced4514f4613aaa952519bf5c27e~mv2.jpg/v1/crop/x_147,y_406,w_3679,h_1694/fill/w_2606,h_1200,al_c,q_90,usm_0.66_1.00_0.01/IMG_8088.webp'
@@ -107,6 +106,7 @@ export default {
         xl50: {
           title: 'XL50',
           slogan: 'The Street Carving Dream',
+          description: 'The XL50  is the culmination of our high performance modular system that started with the XL2.0 Based on our mix terrain Carver architecture, the XL50 is a street carving DREAM, while packing excess power and versatility to outperform any terrain or condition.',
           orderLink: '',
           specs: {
             battery: {
@@ -120,6 +120,22 @@ export default {
             },
             chargeTime: {
               primary: '3 Hours'
+            },
+            inclination: {
+              title: 'Inclination',
+              primary: '+40%'
+            },
+            dimensions: {
+              title: 'Dimensions',
+              primary: '44" x 17" x 8"'
+            },
+            additionalInfromation: {
+              title: 'Additional Infromation',
+              primary: ''
+            },
+            waiver: {
+              title: 'WAIVER OF LIABILITY',
+              primary: ''
             }
           },
           price: '4,185',
@@ -127,32 +143,94 @@ export default {
             {
               src: KalyXL501,
               alt: ''
+            },
+            {
+              src: KalyXL501,
+              alt: ''
+            },
+          ],
+          products: [
+            {
+              main: true,
+              src: 'https://static.wixstatic.com/media/201c1e_5c05a7404034437bb46924d34836661a~mv2.jpg/v1/crop/x_0,y_153,w_3000,h_1381/fill/w_2606,h_1200,al_c,q_90,usm_0.66_1.00_0.01/IMG_8224_edited.webp'
+            },
+            {
+              main: true,
+              src: 'https://static.wixstatic.com/media/201c1e_27d3b2efc97948d195022a50b0a2a8ff~mv2.jpg/v1/fill/w_2606,h_1200,al_c,q_90,usm_0.66_1.00_0.01/IMG_8071.webp'
+            },
+            {
+              src: 'https://static.wixstatic.com/media/201c1e_75cd2ad8bfd341f5b4b26241de5fca21~mv2.jpg/v1/crop/x_0,y_112,w_3865,h_2005/fill/w_1376,h_714,al_c,q_85,usm_0.66_1.00_0.01/IMG_8226.webp'
+            },
+            {
+              src: 'https://static.wixstatic.com/media/201c1e_3d2516db303d4250b533e73bf2a20aca~mv2.jpg/v1/crop/x_0,y_0,w_2868,h_1688/fill/w_1246,h_714,al_c,q_85,usm_0.66_1.00_0.01/IMG_8228_edited.webp'
+            },
+            {
+              src: 'https://static.wixstatic.com/media/201c1e_8aebc1ba1d2f4cb49f1c58c9a101fa57~mv2.jpg/v1/crop/x_157,y_18,w_3772,h_2174/fill/w_2622,h_1442,al_c,q_90,usm_0.66_1.00_0.01/IMG_8227.webp'
+            },
+            {
+              src: 'https://static.wixstatic.com/media/201c1e_7483a0f5bf6045508b04be63b13c3524~mv2.jpg/v1/crop/x_0,y_387,w_4031,h_1856/fill/w_2622,h_1200,al_c,q_90,usm_0.66_1.00_0.01/IMG_8225%20copy.webp'
+            },
+            {
+              src: 'https://static.wixstatic.com/media/201c1e_78f55e6102fd493fb8a0ca584b460dcb~mv2.jpg/v1/crop/x_0,y_0,w_3512,h_2268/fill/w_1304,h_820,al_c,q_85,usm_0.66_1.00_0.01/IMG_8133%202.webp'
+            },
+            {
+              src: 'https://static.wixstatic.com/media/201c1e_c7f2822ebcc94c00825aef2304d4af85~mv2.jpg/v1/crop/x_106,y_106,w_3464,h_2129/fill/w_1304,h_820,al_c,q_85,usm_0.66_1.00_0.01/12-38.webp'
+            },
+            {
+              src: 'https://static.wixstatic.com/media/201c1e_72067438abe846869c1a3a398809c88c~mv2.jpg/v1/fill/w_1304,h_732,al_c,q_85,usm_0.66_1.00_0.01/IMG_8224.webp'
             }
           ]
         },
         xl20: {
           title: 'XL2.0',
-          slogan: 'The Street Carving Dream',
+          slogan: 'Big Power. Bite sized.',
+          description: 'This XL 2.0 has 6396-190Kv motors, a new modular and servicable 12S-4P battery pack. It shares the same redesigned enclosure as the XL50.',
           orderLink: '',
           specs: {
             battery: {
-              primary: ''
+              primary: '12S-4P'
             },
             motors: {
-              primary: ''
+              primary: '6396-190Kv'
             },
             range: {
-              primary: ''
+              primary: '23-25 miles'
             },
             chargeTime: {
+              primary: '2 Hours'
+            },
+            inclination: {
+              title: 'Inclination',
+              primary: '+40%'
+            },
+            dimensions: {
+              title: 'Dimensions',
+              primary: '44" x 17" x 8"'
+            },
+            additionalInfromation: {
+              title: 'Additional Infromation',
+              primary: ''
+            },
+            waiver: {
+              title: 'WAIVER OF LIABILITY',
               primary: ''
             }
           },
-          price: '',
+          price: '2,850',
           images: [
             {
               src: '',
               alt: ''
+            }
+          ],
+          products: [
+            {
+              main: true,
+              src: 'https://static.wixstatic.com/media/201c1e_0d4bf3ed5994436b9e0555736e3560d5~mv2_d_2787_1568_s_2.jpg/v1/fill/w_1960,h_1102,al_c,q_85,usm_0.66_1.00_0.01/201c1e_0d4bf3ed5994436b9e0555736e3560d5~mv2_d_2787_1568_s_2.webp'
+            },
+            {
+              main: true,
+              src: 'https://static.wixstatic.com/media/201c1e_30e750b5d1fb44af8fc700b1bc0306ab~mv2_d_2612_1469_s_2.jpg/v1/fill/w_1960,h_1102,al_c,q_85,usm_0.66_1.00_0.01/201c1e_30e750b5d1fb44af8fc700b1bc0306ab~mv2_d_2612_1469_s_2.webp'
             }
           ]
         }

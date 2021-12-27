@@ -8,7 +8,7 @@
       </ul>
     </div>-->
     <div class="flex z-10 justify-self-center">
-      <img class="kaly-logo" :src="Kaly" />
+      <router-link to="/"><img class="kaly-logo" :src="Kaly" /></router-link>
     </div>
     <!--<div class="flex place-content-end z-10">
       <img class="cart-logo" :src="Cart" />

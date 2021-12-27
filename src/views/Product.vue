@@ -8,7 +8,7 @@
       {{boards[this.$route.params.product].slogan}}
     </div>
     
-    <div class="grid grid-cols-2 gap-8 px-10 sm:px-20 ">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 px-10 sm:px-20 ">
       <div class="text-lg">
         <div class="font-bold mb-4">The Mission</div>
         <div class="text-2xl">{{boards[this.$route.params.product].description}}</div>
@@ -46,14 +46,15 @@
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-20">
       <div class="w-full">
-        <SquareCard class="mb-10" :img="boards[this.$route.params.product].products[3].src" href="" noView/>
-        <SquareCard class="mb-10" :img="boards[this.$route.params.product].products[4].src" href="" noView />
-        <SquareCard class="mb:mb-10" :img="boards[this.$route.params.product].products[5].src" href="" noView />
+        <SquareCard v-if="boards[this.$route.params.product].products[2]" class="mb-10" :img="boards[this.$route.params.product].products[2].src" href="" noView/>
+        <SquareCard v-if="boards[this.$route.params.product].products[3]" class="mb-10" :img="boards[this.$route.params.product].products[3].src" href="" noView />
+        <SquareCard v-if="boards[this.$route.params.product].products[4]" class="mb-10" :img="boards[this.$route.params.product].products[4].src" href="" noView />
+        <SquareCard v-if="boards[this.$route.params.product].products[5]" class="mb:mb-10" :img="boards[this.$route.params.product].products[5].src" href="" noView/>
       </div>
       <div class="md:mt-20">
-        <SquareCard class="mb-10" :img="boards[this.$route.params.product].products[6].src" href="" noView/>
-        <SquareCard class="mb-10" :img="boards[this.$route.params.product].products[7].src" href="" noView/>
-        <SquareCard class="mb-10" :img="boards[this.$route.params.product].products[8].src" href="" noView/>
+        <SquareCard v-if="boards[this.$route.params.product].products[6]" class="mb-10" :img="boards[this.$route.params.product].products[6].src" href="" noView/>
+        <SquareCard v-if="boards[this.$route.params.product].products[7]" class="mb-10" :img="boards[this.$route.params.product].products[7].src" href="" noView/>
+        <SquareCard v-if="boards[this.$route.params.product].products[8]" class="mb-10" :img="boards[this.$route.params.product].products[8].src" href="" noView/>
       </div>
     </div>
 
@@ -66,14 +67,18 @@
             <div class="px-10 py-4 text-2xl md:text-4xl">XL-R</div>
           </div>
         </router-link>
-        <div class="xl-collection-product-square">
-          <div><img :src="XL50Square" /></div>
-          <div class="px-10 py-4 text-2xl md:text-4xl">XL 50</div>
-        </div>
-        <div class="xl-collection-product-square">
-          <img :src="XL20Square" />
-          <div class="px-10 py-4 text-2xl md:text-4xl">XL 2.0</div>
-        </div>
+        <router-link to="/product/xl50">
+          <div class="xl-collection-product-square">
+            <div><img :src="XL50Square" /></div>
+            <div class="px-10 py-4 text-2xl md:text-4xl">XL 50</div>
+          </div>
+        </router-link>
+        <router-link to="/product/xl20">
+          <div class="xl-collection-product-square">
+            <img :src="XL20Square" />
+            <div class="px-10 py-4 text-2xl md:text-4xl">XL 2.0</div>
+          </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -103,6 +108,11 @@ export default {
     ProductHero,
     SquareCard
   },
+  watch:{
+    $route (){
+      window.scrollTo(0,0)
+    }
+  }, 
   data() {
     return {
       XLRSquare,
@@ -111,7 +121,7 @@ export default {
     }
   },
   mounted() {
-    console.log(this.$route.params.product)
+    window.scrollTo(0,0)
   }
 }
 </script>

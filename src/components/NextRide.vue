@@ -8,14 +8,18 @@
           <div class="px-10 py-4 text-4xl">XL-R</div>
         </div>
       </router-link>
-      <div class="xl-collection-product-square">
-        <div><img :src="XL50Square" /></div>
-        <div class="px-10 py-4 text-4xl">XL 50</div>
-      </div>
-      <div class="xl-collection-product-square">
-        <img :src="XL20Square" />
-        <div class="px-10 py-4 text-4xl">XL 2.0</div>
-      </div>
+      <router-link to="/product/xl50">
+        <div class="xl-collection-product-square">
+          <div><img :src="XL50Square" /></div>
+          <div class="px-10 py-4 text-4xl">XL 50</div>
+        </div>
+      </router-link>
+      <router-link to="/product/xl20">
+        <div class="xl-collection-product-square">
+          <img :src="XL20Square" />
+          <div class="px-10 py-4 text-4xl">XL 2.0</div>
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
