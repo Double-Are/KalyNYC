@@ -1,18 +1,26 @@
 <template>
-  <div class="nav-bar-wrapper grid grid-cols-1 lg:grid-cols-1 items-center w-full fixed py-8 z-30">
-    <div class="gradient-nav-bar absolute w-full h-full z-0"></div>
-    <!--<div class="z-10">
-      <ul class="text-2xl text-gray-100 flex">
-        <li class="mr-5">Products</li> 
-        <li>Contact</li>
-      </ul>
-    </div>-->
-    <div class="flex z-10 justify-self-center">
-      <router-link to="/"><img class="kaly-logo" :src="Kaly" /></router-link>
+  <div class="nav-bar-wrapper grid grid-cols-1 lg:grid-cols-1 items-center w-full py-8 z-30 top-0" 
+    :class="{ 'relative': noFixed, 'fixed': !noFixed }" >
+    <div v-if="!bgSolid" class="gradient-nav-bar absolute w-full h-full z-0"></div>
+    <div v-if="bgSolid" class="bg-black absolute w-full h-full z-0"></div>
+    <div class="grid grid-cols-3 items-center">
+      <div class="z-10">
+        <ul class="text-2xl text-gray-100 flex px-8">
+          <li class="mr-5">
+            <router-link to="/video">Media</router-link>
+          </li> 
+          <li class="mr-5">
+            <router-link to="/documentation">Documentation</router-link>
+          </li> 
+        </ul>
+      </div>
+      <div class="flex z-10 justify-self-center">
+        <router-link to="/"><img class="kaly-logo" :src="Kaly" /></router-link>
+      </div>
+      <!--<div class="flex place-content-end z-10">
+        <img class="cart-logo" :src="Cart" />
+      </div>-->
     </div>
-    <!--<div class="flex place-content-end z-10">
-      <img class="cart-logo" :src="Cart" />
-    </div>-->
   </div>  
 </template>
 
@@ -22,7 +30,14 @@ import Cart from '@/assets/cart.png'
 
 export default {
   name: 'NavBar',
-  props: {},
+  props: {
+    bgSolid: {
+      type: Boolean
+    },
+    noFixed: {
+      type: Boolean
+    }
+  },
   data() {
     return {
       Kaly,
