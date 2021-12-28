@@ -4,7 +4,7 @@
     <div class="text-2xl md:text-4xl lg:text-7xl font-medium py-10 px-20">Rides</div>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-20">
       <div class="mb-8" v-for="(ride, index) in youtubeRides" v-bind:key="index">
-        <div class="text-sm mb-1 font-medium">#{{ride.tag}}</div>
+        <div class="text-sm mb-1 mr-2 font-medium inline-block" v-for="(tag, index) in ride.tags" v-bind:key="index + 'tag'">#{{tag}}</div>
         <iframe  
           class="mb-3 rounded-lg"
           width="100%" 
@@ -16,6 +16,7 @@
           allowfullscreen>
         </iframe>
         <div class="font-bold mb-2 truncate">{{ride.title}}</div>
+        <div class="text-sm font-medium">{{ride.creator}}</div>
         <div class="text-sm text-gray-500">{{limitToNumberOfCharacters(75, ride.description)}}</div>
       </div>
     </div>

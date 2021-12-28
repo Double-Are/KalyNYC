@@ -6,7 +6,7 @@
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 px-20">
       <div class="mb-8 grid grid-cols-2 gap-4" v-for="(documentation, index) in youtubeDocumentation" v-bind:key="index">
         <div>
-          <div class="text-sm mb-1 font-medium">#{{documentation.tag}}</div>
+          <div class="text-sm mb-1 mr-1 font-medium" v-for="(tag, index) in documentation.tags" v-bind:key="index + 'tag'">#{{tag}}</div>
           <iframe  
             class="mb-3 rounded-lg"
             width="100%" 
@@ -20,6 +20,7 @@
         </div>
         <div class="mt-5">
           <div class="font-bold mb-2 truncate">{{documentation.title}}</div>
+          <div class="text-sm font-medium">{{documentation.creator}}</div>
           <div class="text-sm text-gray-500">{{documentation.description}}</div>
         </div>
       </div>
