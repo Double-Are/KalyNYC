@@ -1,17 +1,28 @@
 <template>
   <div class="kalynyc-wrapper w-full">
+    <!--NavBar-->
     <Navbar />
+
+    <!--HERO-->
     <Hero />
+    
+    <!--Large KalyNYC-->
     <div class="kaly-impact my-20 px-20"><img :src="KalyNYC" /></div>
+    
+    <!--All XL Boards-->
     <div class="pl-20 mb-16">
       <NextRide />
     </div>
+
+    <!--XL Boards-->
     <div class="mb-16">
       <BoardView :board="boards.xlr" left/>
     </div>
     <div class="mb-16">
       <BoardView :board="boards.xl50" right/>
     </div>
+
+    <!--Big Square Parts-->
     <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-20">
       <div class="w-full">
         <SquareCard class="mb-10" :img="SomethingBeautifulCard" title="Something Beautiful Tee" href="https://www.kaly.nyc/product-page/something-beautiful-tee"/>
@@ -23,15 +34,23 @@
       </div>
     </div>
 
+    <!--Splash Image-->
     <div class="mb-16 relative">
       <div class="absolute right-0 text-white text-4xl py-8 px-14 font-bold">Find Your Adventure</div>
       <img class="w-full" :src="FindYourAdventure" />
     </div>
 
-    <div>
-      <iframe v-for="(youtube, index) in youtubes" v-bind:key="index" width="560" height="315" :src="youtube.src" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!--Videos-->
+    <div class="px-10 sm:px-20 videos-card-long-description mb-20">
+      <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">The Ultimate ESk8 Experience</div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <VideoCardLongDescription v-for="(listing, index) in selectHomeVideos"  
+          v-bind:key="index + 'documentation'" 
+          :listing="listing" />
+      </div>
     </div>
 
+    <!--Parts Accessories-->
     <div class="px-10 sm:px-20 parts-accessories">
       <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Parts / Accessories</div>
 
@@ -59,6 +78,8 @@ import XLDeckCard from '@/assets/XL Deck Card.jpg'
 import BDampersCard from '@/assets/B_Dampers Card.jpg'
 import XL20Card from '@/assets/XL20 Card.jpg'
 import FindYourAdventure from '@/assets/Find Your Adventure Splash.jpg'
+import youtubeRides from '@/utils/rides.js'
+import VideoCardLongDescription from '@/components/VideoCardLongDescription'
 
 export default {
   name: 'Kaly',
@@ -76,7 +97,8 @@ export default {
     NextRide,
     BoardView,
     SquareCard,
-    PartCard
+    PartCard,
+    VideoCardLongDescription
   },
   data() {
     return {
@@ -86,12 +108,16 @@ export default {
       BDampersCard,
       FindYourAdventure,
       XL20Card,
-      youtubes: [
-        {
-          board: 'xlr',
-          src: 'https://www.youtube.com/embed/qgph6upeIhk'
-        }  
-      ]
+      youtubeRides
+    }
+  },
+  computed: {
+    selectHomeVideos() {
+      return youtubeRides.filter(ride => {
+        if (ride.home) {
+          return ride
+        }
+      })
     }
   }
 }

@@ -1,5 +1,6 @@
 const youtubeRides = [
   {
+    home: true,
     tags: ['xl40'],
     src: 'https://www.youtube.com/embed/R2v5_29Rzas',
     title: 'KalyNyc - California Mt Baldy',
@@ -7,11 +8,12 @@ const youtubeRides = [
     creator: 'CarveLA'
   },
   {
+    home: true,
     tags: ['xl40'],
-    src: 'https://www.youtube.com/embed/QRwxPaChM-4',
-    title: 'Carving a Kaly Nyc XL40 in Downtown LA',
-    description: `#kaly.nyc #xl40 #laesk8 #esk8 #kalynyc #electricskateboard #skateboard #esk8usa #california #calivibes #kaly #esk8squad #esk8riders`,
-    creator: 'CarveLA'
+    src: 'https://www.youtube.com/embed/TflYRxPdFt8',
+    title: 'California Santa Fe Dam Kalynyc Esk8',
+    description: `In this video we skate the Santa Fe Dam on our electric skateboards.`,
+    creator: 'Image.Warrior'
   },
   {
     tags: ['interview'],
@@ -36,12 +38,13 @@ const youtubeRides = [
   },
   {
     tags: ['xl40'],
-    src: 'https://www.youtube.com/embed/TflYRxPdFt8',
-    title: 'California Santa Fe Dam Kalynyc Esk8',
-    description: `In this video we skate the Santa Fe Dam on our electric skateboards.`,
-    creator: 'Image.Warrior'
+    src: 'https://www.youtube.com/embed/QRwxPaChM-4',
+    title: 'Carving a Kaly Nyc XL40 in Downtown LA',
+    description: `#kaly.nyc #xl40 #laesk8 #esk8 #kalynyc #electricskateboard #skateboard #esk8usa #california #calivibes #kaly #esk8squad #esk8riders`,
+    creator: 'CarveLA'
   },
   {
+    home: true,
     tags: ['xlr'],
     src: 'https://www.youtube.com/embed/b_aWhQ0cP5k',
     title: 'THE ALL NEW KALY XLR',
