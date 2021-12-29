@@ -34,8 +34,18 @@
       </div>
     </div>
 
+    <!--Interviews-->
+    <div class="px-10 sm:px-20 bg-gray-100 p-16">
+      <div class="text-2xl md:text-4xl lg:text-7xl font-medium">Interviews</div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+        <VideoCard v-for="(listing, index) in youtubeInterviews"  
+          v-bind:key="index + 'ride'" 
+          :listing="listing" />
+      </div>
+    </div>
+
     <!--Splash Image-->
-    <div class="mb-16 relative">
+    <div class="relative">
       <div class="absolute right-0 text-white text-4xl py-8 px-14 font-bold">Find Your Adventure</div>
       <img class="w-full" :src="FindYourAdventure" />
     </div>
@@ -51,7 +61,7 @@
     </div>
 
     <!--Parts Accessories-->
-    <div class="px-10 sm:px-20 parts-accessories">
+    <div class="px-10 sm:px-20 parts-accessories bg-gray-100 p-16">
       <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Parts / Accessories</div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
@@ -80,6 +90,8 @@ import XL20Card from '@/assets/XL20 Card.jpg'
 import FindYourAdventure from '@/assets/Find Your Adventure Splash.jpg'
 import youtubeRides from '@/utils/rides.js'
 import VideoCardLongDescription from '@/components/VideoCardLongDescription'
+import VideoCard from '@/components/VideoCard'
+import youtubeInterviews from '@/utils/interviews.js'
 
 export default {
   name: 'Kaly',
@@ -98,7 +110,8 @@ export default {
     BoardView,
     SquareCard,
     PartCard,
-    VideoCardLongDescription
+    VideoCardLongDescription,
+    VideoCard
   },
   data() {
     return {
@@ -108,7 +121,8 @@ export default {
       BDampersCard,
       FindYourAdventure,
       XL20Card,
-      youtubeRides
+      youtubeRides,
+      youtubeInterviews
     }
   },
   computed: {

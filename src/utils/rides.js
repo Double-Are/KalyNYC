@@ -16,13 +16,6 @@ const youtubeRides = [
     creator: 'Image.Warrior'
   },
   {
-    tags: ['interview'],
-    src: 'https://www.youtube.com/embed/piFlTPKDId8',
-    title: 'Kaly XL-R / Interview with Ernesto',
-    description: `I have to admit I had a great time with Mr. Ernesto from Kaly Board. His knowledge of DYI was on full display as he broke down his new Kaly XL-R, the electronic braking system, anti-overcharging system, gear drive, the beginnings of the company and the future of eskate. Trust you do not want to miss this interview. Learn more about Kaly by using link. https://www.kaly.nyc`,
-    creator: 'MrPhillipsTheChangeAgent'
-  },
-  {
     tags: ['xlr'],
     src: 'https://www.youtube.com/embed/af1PPTXVfRY',
     title: 'Kaly XLR...JUST GOT IT....ESK8',

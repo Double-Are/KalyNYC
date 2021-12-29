@@ -7,6 +7,13 @@
         v-bind:key="index + 'ride'" 
         :listing="listing" />
     </div>
+
+    <div class="text-2xl md:text-4xl lg:text-7xl font-medium py-10 px-20">Interviews</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-20">
+      <VideoCard v-for="(listing, index) in youtubeInterviews"  
+        v-bind:key="index + 'ride'" 
+        :listing="listing" />
+    </div>
     <ChooseYourRide />
   </div>
 </template>
@@ -15,6 +22,7 @@
 import Navbar from '@/components/Navbar'
 import ChooseYourRide from '@/components/ChooseYourRide'
 import youtubeRides from '@/utils/rides.js'
+import youtubeInterviews from '@/utils/interviews.js'
 import VideoCard from '@/components/VideoCard'
 
 export default {
@@ -27,7 +35,8 @@ export default {
   },
   data() {
     return {
-      youtubeRides
+      youtubeRides,
+      youtubeInterviews
     }
   }
 }
