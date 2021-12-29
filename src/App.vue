@@ -10,6 +10,7 @@ import KalyXLR1 from '@/assets/KalyXLR1.jpg'
 import KalyXLR2 from '@/assets/KalyXLR2.webp'
 import KalyXL501 from '@/assets/KalyXL501.webp'
 import Footer from '@/components/Footer'
+import 'animate.css';
 
 export default {
   name: 'App',
@@ -25,7 +26,7 @@ export default {
           description: `XL-R is our most advanced esk8 yet.
           Designed to satisfy all the requirements of todays riders and pushing the boundaries of what is possible on esk8, gone are the days of compromising and settling for one riding style or another.
           Free yourself, Advance to the future.`,
-          orderLink: 'https://www.kaly.nyc/',
+          orderLink: 'https://www.kaly.nyc/product-page/xl-r',
           specs: {
             battery: {
               title: 'Battery',
@@ -107,7 +108,7 @@ export default {
           title: 'XL50',
           slogan: 'The Street Carving Dream',
           description: 'The XL50  is the culmination of our high performance modular system that started with the XL2.0 Based on our mix terrain Carver architecture, the XL50 is a street carving DREAM, while packing excess power and versatility to outperform any terrain or condition.',
-          orderLink: 'https://www.kaly.nyc/',
+          orderLink: 'https://www.kaly.nyc/product-page',
           specs: {
             battery: {
               primary: '12S-8P'
@@ -185,7 +186,7 @@ export default {
           title: 'XL2.0',
           slogan: 'Big Power. Bite sized.',
           description: 'This XL 2.0 has 6396-190Kv motors, a new modular and servicable 12S-4P battery pack. It shares the same redesigned enclosure as the XL50.',
-          orderLink: 'https://www.kaly.nyc/',
+          orderLink: 'https://www.kaly.nyc/product-page/xl2-0',
           specs: {
             battery: {
               primary: '12S-4P'
@@ -298,5 +299,9 @@ export default {
 
   .content-max-width { 
     max-width: 1280px;
+  }
+
+  :root {
+    --animate-duration: 400ms;
   }
 </style>

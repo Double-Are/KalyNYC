@@ -52,5 +52,25 @@ export default {
   .xl-collection-product-square {
     max-width: 470px;
     width: 100%;
+    overflow: hidden;
+    padding: 10px 10px 0 10px;
+    position: relative;
+    color: #fff;
+  }
+  .xl-collection-product-square:after {
+    position: absolute;
+    left: -15px;
+    top: 0px;
+    background: #000;
+    content: '';
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+  }
+  .xl-collection-product-square img {
+    transition: all 0.4s;
+  }
+  .xl-collection-product-square:hover img {
+    transform: scale(1.5);
   }
 </style>

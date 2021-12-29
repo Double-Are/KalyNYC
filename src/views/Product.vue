@@ -2,13 +2,14 @@
   <div class="product-wrapper">
     <Navbar />
     <ProductHero :board="boards[this.$route.params.product]" 
-      :products="boards[this.$route.params.product].products" />
+      :products="boards[this.$route.params.product].products" 
+      :onClick="() => openKalySite(boards[this.$route.params.product].orderLink, true, kalySite)"/>
 
     <div class="flex text-7xl justify-center w-full p-8 py-12 font-bold">
       {{boards[this.$route.params.product].slogan}}
     </div>
     
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 px-10 sm:px-20 ">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 px-10 sm:px-20 content-max-width mx-auto">
       <div class="text-lg">
         <div class="font-bold mb-4">The Mission</div>
         <div class="text-2xl">{{boards[this.$route.params.product].description}}</div>
@@ -44,7 +45,7 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-20 content-max-width mx-auto">
       <div class="w-full">
         <SquareCard v-if="boards[this.$route.params.product].products[2]" class="mb-10" :img="boards[this.$route.params.product].products[2].src" href="" noView/>
         <SquareCard v-if="boards[this.$route.params.product].products[3]" class="mb-10" :img="boards[this.$route.params.product].products[3].src" href="" noView />
@@ -81,6 +82,17 @@
         </router-link>
       </div>
     </div>
+
+    <div v-if="kalySite.state" class="fixed bottom-0 right-0 h-3/4 z-30 w-full bg-black animate__animated animate__fadeInUp">
+      <div class="absolute z-10 h-24 w-full top-0 left-0 bg-black px-8 py-4 grid grid-cols-2 items-center shadow-lg-gray">
+        <div class="text-2xl md:text-4xl lg:text-5xl font-medium text-white mr-4">Kaly.nyc Portal</div>
+        <div class="flex justify-self-end text-white text-2xl">
+          <div class="mr-4" @click="openKalySite('', false, kalySite)">Close</div>
+          <div @click="openKalySite('https://www.kaly.nyc/cart', true, kalySite)">Cart</div>
+        </div>
+      </div>
+      <iframe :src="kalySite.href" class="w-full h-full"/>
+    </div>
   </div>
 </template>
 
@@ -88,6 +100,7 @@
 import Navbar from '@/components/Navbar'
 import ProductHero from '@/components/ProductHero'
 import SquareCard from '@/components/SquareCard'
+import openKalySite from '@/utils/openKalySite.js'
 
 import XLRSquare from '@/assets/XLR-square.jpg'
 import XL50Square from '@/assets/XL50-square.jpg'
@@ -117,11 +130,18 @@ export default {
     return {
       XLRSquare,
       XL50Square,
-      XL20Square
+      XL20Square,
+      kalySite: {
+        state: false,
+        href: '',
+      }
     }
   },
   mounted() {
     window.scrollTo(0,0)
+  },
+  methods: {
+    openKalySite
   }
 }
 </script>

@@ -19,8 +19,8 @@
           :listing="listing" />
       </div>
     </div>
-
-    <div class="content-max-width mx-auto">
+    
+    <div class="bg-black p-16">
       <ChooseYourRide />
     </div>
   </div>

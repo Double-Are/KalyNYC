@@ -22,7 +22,7 @@
 
     <div class="grid grid-cols-2">
       <div class="text-2xl font-bold">${{board.price}}</div>
-      <div class="rounded-full bg-black text-white flex justify-center items-center"><a :href="board.orderLink">Order Now</a></div>
+      <div @click="onClick" class="rounded-full bg-black text-white flex justify-center items-center">Order Now</div>
     </div>
   </div>
 </template>
@@ -33,6 +33,9 @@ export default {
   props: {
     board: {
       type: Object
+    },
+    onClick: {
+      type: Function
     }
   }
 }

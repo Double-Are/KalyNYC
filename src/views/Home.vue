@@ -19,22 +19,30 @@
     <!--XL Boards-->
     <div class="content-max-width mx-auto">
       <div class="mb-16">
-        <BoardView :board="boards.xlr" left/>
+        <BoardView :board="boards.xlr" left :onClick="() => openKalySite(boards.xlr.orderLink, true, kalySite)"/>
       </div>
       <div class="mb-16">
-        <BoardView :board="boards.xl50" right/>
+        <BoardView :board="boards.xl50" right :onClick="() => openKalySite(boards.xl50.orderLink, true, kalySite)"/>
       </div>
     </div>
 
     <!--Big Square Parts-->
     <div class="content-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-20">
       <div class="w-full">
-        <SquareCard class="mb-10" :img="SomethingBeautifulCard" title="Something Beautiful Tee" href="https://www.kaly.nyc/product-page/something-beautiful-tee"/>
-        <SquareCard class="mb:mb-10" :img="BDampersCard" title="B_Dampers" href="https://www.kaly.nyc/product-page/b-dampers"/>
+        <div @click="openKalySite('https://www.kaly.nyc/product-page/something-beautiful-tee', true, kalySite)">
+          <SquareCard class="mb-10" :img="SomethingBeautifulCard" title="Something Beautiful Tee" />
+        </div>
+        <div @click="openKalySite('https://www.kaly.nyc/product-page/b-dampers', true, kalySite) ">
+          <SquareCard class="mb:mb-10" :img="BDampersCard" title="B_Dampers" />
+        </div>
       </div>
       <div class="md:mt-20">
-        <SquareCard class="mb-10" :img="XL20Card" title="XL 2.0" href="https://www.kaly.nyc/product-page/xl2-0"/>
-        <SquareCard class="mb-10" :img="XLDeckCard" title="XL Deck" href="https://www.kaly.nyc/product-page/xl-deck"/>
+        <div @click="openKalySite('https://www.kaly.nyc/product-page/xl2-0', true, kalySite)">
+          <SquareCard class="mb-10" :img="XL20Card" title="XL 2.0" />
+        </div>
+        <div @click="openKalySite('https://www.kaly.nyc/product-page/xl-deck', true, kalySite)">
+          <SquareCard class="mb-10" :img="XLDeckCard" title="XL Deck" />
+        </div>
       </div>
     </div>
 
@@ -76,6 +84,17 @@
           :href="part.href" />
       </div>
     </div>
+
+    <div v-if="kalySite.state" class="fixed bottom-0 right-0 h-3/4 z-30 w-full bg-black animate__animated animate__fadeInUp">
+      <div class="absolute z-10 h-24 w-full top-0 left-0 bg-black px-8 py-4 grid grid-cols-2 items-center shadow-lg-gray">
+        <div class="text-2xl md:text-4xl lg:text-5xl font-medium text-white mr-4">Kaly.nyc Portal</div>
+        <div class="flex justify-self-end text-white text-2xl">
+          <div class="mr-4" @click="openKalySite('', false, kalySite)">Close</div>
+          <div @click="openKalySite('https://www.kaly.nyc/cart', true, kalySite)">Cart</div>
+        </div>
+      </div>
+      <iframe :src="kalySite.href" class="w-full h-full"/>
+    </div>
   </div>
 </template>
 
@@ -96,6 +115,7 @@ import youtubeRides from '@/utils/rides.js'
 import VideoCardLongDescription from '@/components/VideoCardLongDescription'
 import VideoCard from '@/components/VideoCard'
 import youtubeInterviews from '@/utils/interviews.js'
+import openKalySite from '@/utils/openKalySite.js'
 
 export default {
   name: 'Kaly',
@@ -126,7 +146,11 @@ export default {
       FindYourAdventure,
       XL20Card,
       youtubeRides,
-      youtubeInterviews
+      youtubeInterviews,
+      kalySite: {
+        state: false,
+        href: '',
+      }
     }
   },
   computed: {
@@ -137,6 +161,9 @@ export default {
         }
       })
     }
+  },
+  methods: {
+    openKalySite
   }
 }
 </script>
@@ -149,5 +176,8 @@ export default {
   .kaly-impact {
     font-size: min(max(16px, calc(1rem + ((1vw - 3px) * 25.5294))), 450px);
     min-height: 0vw;
+  }
+  .shadow-lg-gray {
+    box-shadow: 0px 3px 25px #444;
   }
 </style>

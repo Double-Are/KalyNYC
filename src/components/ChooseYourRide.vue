@@ -1,25 +1,27 @@
 <template>
-  <div class="choose-your-ride-wrapper p-8 bg-black">
-    <div class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">Choose Your Ride</div>
-    <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 text-white">
-      <router-link to="/product/xlr">
-        <div class="xl-collection-product-square">
-          <img :src="XLRSquare" />
-          <div class="px-10 py-4 text-2xl md:text-4xl">XL-R</div>
-        </div>
-      </router-link>
-      <router-link to="/product/xl50">
-        <div class="xl-collection-product-square">
-          <div><img :src="XL50Square" /></div>
-          <div class="px-10 py-4 text-2xl md:text-4xl">XL 50</div>
-        </div>
-      </router-link>
-      <router-link to="/product/xl20">
-        <div class="xl-collection-product-square">
-          <img :src="XL20Square" />
-          <div class="px-10 py-4 text-2xl md:text-4xl">XL 2.0</div>
-        </div>
-      </router-link>
+  <div class="choose-your-ride-wrapper bg-black">
+    <div class="content-max-width mx-auto">
+      <div class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">Choose Your Ride</div>
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 text-white">
+        <router-link to="/product/xlr">
+          <div class="xl-collection-product-square">
+            <img :src="XLRSquare" />
+            <div class="px-10 py-4 text-2xl md:text-4xl">XL-R</div>
+          </div>
+        </router-link>
+        <router-link to="/product/xl50">
+          <div class="xl-collection-product-square">
+            <div><img :src="XL50Square" /></div>
+            <div class="px-10 py-4 text-2xl md:text-4xl">XL 50</div>
+          </div>
+        </router-link>
+        <router-link to="/product/xl20">
+          <div class="xl-collection-product-square">
+            <img :src="XL20Square" />
+            <div class="px-10 py-4 text-2xl md:text-4xl">XL 2.0</div>
+          </div>
+        </router-link>
+      </div>
     </div>
   </div>
 </template>

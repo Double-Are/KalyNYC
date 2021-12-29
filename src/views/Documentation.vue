@@ -11,7 +11,9 @@
       </div>
     </div>
 
-    <ChooseYourRide />
+    <div class="bg-black p-16">
+      <ChooseYourRide />
+    </div>
   </div>
 </template>
 

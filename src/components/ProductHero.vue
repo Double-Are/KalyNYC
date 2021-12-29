@@ -17,7 +17,7 @@
             <div class="text-2xl font-bold justify-self-end">${{board.price}}</div>
           </div>
           <div class="flex justify-end">
-            <a class="rounded-full bg-black text-white flex justify-center py-2 w-1/3" :href="board.orderLink" target="_blank">
+            <a class="rounded-full bg-black text-white flex justify-center py-2 w-1/3" @click="onClick" target="_blank">
               Order Now
             </a>
           </div>
@@ -37,6 +37,9 @@ export default {
     },
     products: {
       type: Array
+    },
+    onClick: {
+      type: Function
     }
   },
   data() {
