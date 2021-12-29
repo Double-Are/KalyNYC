@@ -10,7 +10,7 @@
             <router-link to="/video">Media</router-link>
           </li> 
           <li class="mr-5">
-            <router-link to="/documentation">Documentation</router-link>
+            <router-link to="/documentation"><span>Doc</span><span class="inline sm:hidden">s</span><span class="hidden sm:inline">umentation</span></router-link>
           </li> 
         </ul>
       </div>
@@ -61,6 +61,7 @@ export default {
   .kaly-logo {
     max-width: 250px;
     max-height: 64px;
+    min-width: 63px;
     width: 100%;
     height: fit-content;
   }
