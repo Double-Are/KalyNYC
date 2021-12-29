@@ -7,7 +7,9 @@
     <Hero />
     
     <!--Large KalyNYC-->
-    <div class="kaly-impact my-20 px-20"><img :src="KalyNYC" /></div>
+    <div class="kaly-impact my-20 mx-auto px-20 content-max-width">
+      <img :src="KalyNYC" />
+    </div>
     
     <!--All XL Boards-->
     <div class="pl-20 mb-16">
@@ -15,15 +17,17 @@
     </div>
 
     <!--XL Boards-->
-    <div class="mb-16">
-      <BoardView :board="boards.xlr" left/>
-    </div>
-    <div class="mb-16">
-      <BoardView :board="boards.xl50" right/>
+    <div class="content-max-width mx-auto">
+      <div class="mb-16">
+        <BoardView :board="boards.xlr" left/>
+      </div>
+      <div class="mb-16">
+        <BoardView :board="boards.xl50" right/>
+      </div>
     </div>
 
     <!--Big Square Parts-->
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-20">
+    <div class="content-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-20">
       <div class="w-full">
         <SquareCard class="mb-10" :img="SomethingBeautifulCard" title="Something Beautiful Tee" href="https://www.kaly.nyc/product-page/something-beautiful-tee"/>
         <SquareCard class="mb:mb-10" :img="BDampersCard" title="B_Dampers" href="https://www.kaly.nyc/product-page/b-dampers"/>
@@ -37,7 +41,7 @@
     <!--Interviews-->
     <div class="px-10 sm:px-20 bg-gray-100 p-16">
       <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Interviews</div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
+      <div class="grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 gap-8">
         <VideoCard v-for="(listing, index) in youtubeInterviews"  
           v-bind:key="index + 'ride'" 
           :listing="listing" />
@@ -145,5 +149,9 @@ export default {
   .kaly-impact {
     font-size: min(max(16px, calc(1rem + ((1vw - 3px) * 25.5294))), 450px);
     min-height: 0vw;
+  }
+
+  .content-max-width { 
+    max-width: 1280px;
   }
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="board-specs-card-wrapper w-full sm:w-2/4 md:w-1/4 p-8">
+  <div class="board-specs-card-wrapper w-full md:w-1/4 p-8">
     <div class="text-4xl font-medium mb-4">{{board.title}}</div>
     <ul class="specs text-xl mb-14">
       <li class="grid grid-cols-2 mb-2">
