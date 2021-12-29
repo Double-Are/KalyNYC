@@ -2,12 +2,14 @@
   <div class="kalynyc-wrapper w-full">
     <Navbar bgSolid noFixed />
 
-    <div class="text-2xl md:text-4xl lg:text-7xl font-medium py-10 px-20">Documentation</div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8 px-20">
+  <div class="px-10 sm:px-20 bg-gray-100 p-16">
+    <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Documentation</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
       <VideoCardLongDescription v-for="(listing, index) in youtubeDocumentation"  
         v-bind:key="index + 'documentation'" 
         :listing="listing" />
     </div>
+  </div>
 
     <ChooseYourRide />
   </div>

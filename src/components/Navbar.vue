@@ -3,8 +3,8 @@
     :class="{ 'relative': noFixed, 'fixed': !noFixed }" >
     <div v-if="!bgSolid" class="gradient-nav-bar absolute w-full h-full z-0"></div>
     <div v-if="bgSolid" class="bg-black absolute w-full h-full z-0"></div>
-    <div class="grid grid-cols-3 items-center">
-      <div class="z-10">
+    <div class="sm:grid flex sm:grid-cols-3 items-center px-8 sm:px-0">
+      <div class="z-10 order-2 sm:order-1">
         <ul class="text-2xl text-gray-100 flex px-8">
           <li class="mr-5">
             <router-link to="/video">Media</router-link>
@@ -14,8 +14,11 @@
           </li> 
         </ul>
       </div>
-      <div class="flex z-10 justify-self-center">
-        <router-link to="/"><img class="kaly-logo" :src="Kaly" /></router-link>
+      <div class="flex z-10 sm:justify-self-center order-1 sm:order-2">
+        <router-link to="/">
+          <img class="kaly-logo hidden sm:block" :src="Kaly" />
+          <img class="kaly-logo block sm:hidden" :src="KalyOuro" />
+        </router-link>
       </div>
       <!--<div class="flex place-content-end z-10">
         <img class="cart-logo" :src="Cart" />
@@ -26,6 +29,7 @@
 
 <script>
 import Kaly from '@/assets/Kaly Logo.png'
+import KalyOuro from '@/assets/KalyOuro.webp'
 import Cart from '@/assets/cart.png'
 
 export default {
@@ -41,7 +45,8 @@ export default {
   data() {
     return {
       Kaly,
-      Cart
+      Cart,
+      KalyOuro
     }
   }
 }
