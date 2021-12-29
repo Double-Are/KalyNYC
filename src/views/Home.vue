@@ -44,20 +44,20 @@
       </div>
     </div>
 
-    <!--Splash Image-->
-    <div class="relative">
-      <div class="absolute right-0 text-white text-4xl py-8 px-14 font-bold">Find Your Adventure</div>
-      <img class="w-full" :src="FindYourAdventure" />
-    </div>
-
     <!--Videos-->
-    <div class="px-10 sm:px-20 videos-card-long-description mb-20">
+    <div class="px-10 sm:px-20 videos-card-long-description p-16">
       <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">The Ultimate ESk8 Experience</div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
         <VideoCardLongDescription v-for="(listing, index) in selectHomeVideos"  
           v-bind:key="index + 'documentation'" 
           :listing="listing" />
       </div>
+    </div>
+
+    <!--Splash Image-->
+    <div class="relative">
+      <div class="absolute right-0 text-white text-4xl py-8 px-14 font-bold">Find Your Adventure</div>
+      <img class="w-full" :src="FindYourAdventure" />
     </div>
 
     <!--Parts Accessories-->

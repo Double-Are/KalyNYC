@@ -9,7 +9,7 @@
     </div>
 
     <div class="text-2xl md:text-4xl lg:text-7xl font-medium py-10 px-20">Interviews</div>
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 px-20">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 px-20">
       <VideoCard v-for="(listing, index) in youtubeInterviews"  
         v-bind:key="index + 'ride'" 
         :listing="listing" />
