@@ -13,8 +13,8 @@
       </div>
 
       <div>
-        <div :style="{ 'background-image': `url(${Skate})` }"></div>
-        <img :src="Skate" class="w-full">
+        <div :style="{ 'background-image': `url(${XL40GIF})` }" class="w-full h-full bg-cover bg-center"></div>
+        <img :src="Skate" class="h-full opacity-0">
       </div>
     </div>
   </div>
@@ -23,6 +23,7 @@
 <script>
 import Limitless from '@/assets/Limitless.jpg'
 import Skate from '@/assets/Skate.jpg'
+import XL40GIF from '@/assets/XL40-GIF.gif'
 
 export default {
   name: 'Hero',
@@ -30,7 +31,8 @@ export default {
   data() {
     return {
       Limitless,
-      Skate
+      Skate,
+      XL40GIF
     }
   }
 }
