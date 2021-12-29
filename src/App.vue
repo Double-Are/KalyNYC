@@ -287,12 +287,16 @@ export default {
 <style>
 @import 'https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css';
 
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  max-width: 2000px;
-  margin: 0 auto;
-}
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+
+  .content-max-width { 
+    max-width: 1280px;
+  }
 </style>

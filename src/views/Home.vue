@@ -150,8 +150,4 @@ export default {
     font-size: min(max(16px, calc(1rem + ((1vw - 3px) * 25.5294))), 450px);
     min-height: 0vw;
   }
-
-  .content-max-width { 
-    max-width: 1280px;
-  }
 </style>

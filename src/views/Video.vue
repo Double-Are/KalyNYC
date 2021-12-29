@@ -20,7 +20,9 @@
       </div>
     </div>
 
-    <ChooseYourRide />
+    <div class="content-max-width mx-auto">
+      <ChooseYourRide />
+    </div>
   </div>
 </template>
 
