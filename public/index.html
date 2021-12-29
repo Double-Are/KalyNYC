@@ -5,9 +5,20 @@
      crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="Kaly fansite to house documentation, interviews, boards and riders.">
+    <meta property="og:title" content="Kaly Fansite" />
+    <meta property="og:description" content="Kaly fansite to house documentation, interviews, boards and riders." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://darriustaylor.com/CLOUDDETOUR_Home.jpg" />
+    <meta property="og:url" content="https://kaly.studio" />
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="apple-touch-icon" sizes="180x180" href="<%= BASE_URL %>apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>favicon-16x16.png">
+    <link rel="manifest" href="<%= BASE_URL %>site.webmanifest">
+    <title>Kaly Studio</title>
   </head>
   <body>
     <noscript>
@@ -16,6 +27,27 @@
     <div id="app"></div>
     <!-- built files will be auto injected -->
   </body>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3729633949530286"
-     crossorigin="anonymous"></script>
+    <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAvgGNRRafYLht3XsBHMWcEy8v1NG933hw",
+      authDomain: "kalynycstudios.firebaseapp.com",
+      projectId: "kalynycstudios",
+      storageBucket: "kalynycstudios.appspot.com",
+      messagingSenderId: "525558324462",
+      appId: "1:525558324462:web:375f86d358e7f2396827ff",
+      measurementId: "G-64LQ65WCC7"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 </html>
