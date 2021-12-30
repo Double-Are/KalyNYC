@@ -1,9 +1,9 @@
 <template>
   <div class="kalynyc-wrapper w-full">
     <Navbar bgSolid noFixed />
-    
+    <h1 class="opacity-0">Kaly Videos</h1>
     <div class="p-16">
-      <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Rides</div>
+      <h2 class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Rides</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         <VideoCard v-for="(listing, index) in youtubeRides"  
           v-bind:key="index + 'ride'" 
@@ -12,7 +12,7 @@
     </div>
 
     <div class="px-10 sm:px-20 bg-gray-100 p-16">
-      <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Interviews</div>
+      <h2 class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Interviews</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <VideoCard v-for="(listing, index) in youtubeInterviews"  
           v-bind:key="index + 'ride'" 

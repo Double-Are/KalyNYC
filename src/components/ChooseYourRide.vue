@@ -1,7 +1,7 @@
 <template>
   <div class="choose-your-ride-wrapper bg-black">
     <div class="content-max-width mx-auto">
-      <div class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">Choose Your Ride</div>
+      <h2 class="text-2xl md:text-4xl lg:text-5xl font-bold mb-6 text-white">Choose Your Ride</h2>
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 text-white">
         <router-link to="/product/xlr">
           <div class="xl-collection-product-square">

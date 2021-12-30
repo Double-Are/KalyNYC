@@ -9,6 +9,17 @@ const youtubeRides = [
   },
   {
     home: true,
+    tags: ['xl2.0'],
+    src: 'https://www.youtube.com/embed/uTwtnSSUweY',
+    title: '2020 Kaly XL 2.0 NOT just FAST',
+    description: `My mini review of a later 2020 Kaly NYC XL 2.0 after a few hundred miles. Some riding and some details not talked about in other reviews.  We all know they are stupid fast.  But what else??  Does it carve?  How can that weird shape be comfortable? Is it loud?  
+
+    Electric Skateboard, Eskate, Onewheel, EUC, Lacroix, Evolve, Skate, Longboard, Carve, Personal Mobility, KALY NYC
+    `,
+    creator: 'infinityphotorob'
+  },
+  {
+    home: true,
     tags: ['xl40'],
     src: 'https://www.youtube.com/embed/TflYRxPdFt8',
     title: 'California Santa Fe Dam Kalynyc Esk8',

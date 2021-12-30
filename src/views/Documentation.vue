@@ -1,9 +1,10 @@
 <template>
   <div class="kalynyc-wrapper w-full">
     <Navbar bgSolid noFixed />
+    <h1 class="opacity-0">Kaly Documentation</h1>
 
     <div class="px-10 sm:px-20 bg-gray-100 p-16">
-      <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Documentation</div>
+      <h2 class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Documentation</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <VideoCardLongDescription v-for="(listing, index) in youtubeDocumentation"  
           v-bind:key="index + 'documentation'" 
