@@ -12,8 +12,8 @@
         <img :src="Limitless" class="w-full">
       </div>
 
-      <div>
-        <div :style="{ 'background-image': `url(${XL40GIF})` }" class="w-full h-full bg-cover bg-center"></div>
+      <div class="relative">
+        <div :style="{ 'background-image': `url(${XL40GIF})` }" class="absolute w-full h-full bg-cover bg-center"></div>
         <img :src="Skate" class="h-full opacity-0">
       </div>
     </div>

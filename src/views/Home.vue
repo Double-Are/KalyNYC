@@ -7,7 +7,7 @@
     <Hero />
     
     <!--Large KalyNYC-->
-    <div class="kaly-impact my-20 mx-auto px-20 content-max-width">
+    <div class="kaly-impact my-10 sm:my-20 mx-auto px-5 sm:px-20 content-max-width">
       <img :src="KalyNYC" />
     </div>
     
@@ -27,7 +27,7 @@
     </div>
 
     <!--Big Square Parts-->
-    <div class="content-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-20">
+    <div class="content-max-width mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 p-5 md:p-20">
       <div class="w-full">
         <div @click="openKalySite('https://www.kaly.nyc/product-page/something-beautiful-tee', true, kalySite)">
           <SquareCard class="mb-10" :img="SomethingBeautifulCard" title="Something Beautiful Tee" />
@@ -47,8 +47,8 @@
     </div>
 
     <!--Interviews-->
-    <div class="px-10 sm:px-20 bg-gray-100 p-16">
-      <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Interviews</div>
+    <div class="px-10 sm:px-20 bg-gray-100 p-5 md:p-16">
+      <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-4 md:mb-10">Interviews</div>
       <div class="grid grid-cols-1 sm:grid-cols-2 2xl:grid-cols-3 gap-8">
         <VideoCard v-for="(listing, index) in youtubeInterviews"  
           v-bind:key="index + 'ride'" 
@@ -57,8 +57,8 @@
     </div>
 
     <!--Videos-->
-    <div class="px-10 sm:px-20 videos-card-long-description p-16">
-      <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">The Ultimate ESk8 Experience</div>
+    <div class="px-10 sm:px-20 videos-card-long-description p-5 md:p-16">
+      <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-4 md:mb-10">The Ultimate ESk8 Experience</div>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-8">
         <VideoCardLongDescription v-for="(listing, index) in selectHomeVideos"  
           v-bind:key="index + 'documentation'" 
@@ -73,8 +73,8 @@
     </div>
 
     <!--Parts Accessories-->
-    <div class="px-10 sm:px-20 parts-accessories bg-gray-100 p-16">
-      <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Parts / Accessories</div>
+    <div class="px-10 sm:px-20 parts-accessories bg-gray-100 p-5 md:p-16">
+      <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-4 md:mb-10">Parts / Accessories</div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
         <PartCard v-for="(part, index) in parts" v-bind:key="index" 
