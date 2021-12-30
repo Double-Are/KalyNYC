@@ -46,6 +46,10 @@
       </div>
     </div>
 
+    <div class="kaly-impact my-5 mb-20 mx-auto content-max-width">
+      <div class="impact font-bold bg-cover" :style="{ 'background-image': `url(${KalyTitleGIF}` }">LIMITLESS RIDE</div>
+    </div>
+
     <!--Interviews-->
     <div class="px-10 sm:px-20 bg-gray-100 p-5 md:p-16">
       <div class="text-2xl md:text-4xl lg:text-7xl font-medium mb-4 md:mb-10">Interviews</div>
@@ -116,6 +120,8 @@ import VideoCardLongDescription from '@/components/VideoCardLongDescription'
 import VideoCard from '@/components/VideoCard'
 import youtubeInterviews from '@/utils/interviews.js'
 import openKalySite from '@/utils/openKalySite.js'
+import XL40GIF from '@/assets/XL40-GIF.gif'
+import KalyTitleGIF from '@/assets/KalyTitle-GIF.gif'
 
 export default {
   name: 'Kaly',
@@ -140,6 +146,8 @@ export default {
   data() {
     return {
       KalyNYC,
+      XL40GIF,
+      KalyTitleGIF,
       SomethingBeautifulCard,
       XLDeckCard,
       BDampersCard,
@@ -174,8 +182,15 @@ export default {
     font-family: impact;
   }
   .kaly-impact {
-    font-size: min(max(16px, calc(1rem + ((1vw - 3px) * 25.5294))), 450px);
-    min-height: 0vw;
+    /*font-size: min(max(16px, calc(1rem + ((1vw - 3px) * 25.5294))), 450px);*/
+    font-size: min(max(70px, calc(4.375rem + ((1vw - 3px) * 25.5102))), 320px);
+    line-height: min(max(70px, calc(4.375rem + ((1vw - 3px) * 25.5102))), 320px);
+  }
+  .impact {
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-font-smoothing: antialiased;
   }
   .shadow-lg-gray {
     box-shadow: 0px 3px 25px #444;

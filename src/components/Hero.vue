@@ -5,6 +5,7 @@
       <div class="relative">
         <div class="absolute gradient-bottom-card-text w-full h-full"></div>
         <div class="absolute text-white z-10 px-8 bottom-0 py-10 sm:py-20">
+          <h1 class="opacity-0">Kaly.nyc Fansite</h1>
           <div class="text-xl mb:text-2xl lg:text-4xl mb-2 lg:mb-6">Limitless Ride</div>
           <div class="text-base lg:text-lg">Designed to satisfy all the requirements of todays riders and pushing the boundaries of what is possible on esk8, gone are the days of compromising and settling for one riding style or another.</div>
         </div>

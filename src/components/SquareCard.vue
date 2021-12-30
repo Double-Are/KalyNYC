@@ -1,7 +1,7 @@
 <template>
   <div class="square-card-wrapper">
     <a :href="href" class="block relative">
-      <div class="absolute py-4 px-8 md:p-8 text-white text-3xl font-bold z-20">{{title}}</div>
+      <h3 class="absolute py-4 px-8 md:p-8 text-white text-3xl font-bold z-20">{{title}}</h3>
       <img :src="img" class="w-full">
       <div v-if="!noView" class="absolute bottom-24 py-2 px-8 md:p-8 text-white text-lg">View Now</div>
     </a>

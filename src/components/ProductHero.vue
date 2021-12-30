@@ -13,7 +13,7 @@
         <div class="h-1/2 py-4 p-8 sm:pl-0 sm:pr-8">
           <div class="text-sm">XL Collection</div>
           <div class="grid grid-cols-2">
-            <div class="text-4xl font-medium mb-4">{{board.title}}</div>
+            <h3 class="text-4xl font-medium mb-4">{{board.title}}</h3>
             <div class="text-2xl font-bold justify-self-end">${{board.price}}</div>
           </div>
           <div class="flex justify-end">

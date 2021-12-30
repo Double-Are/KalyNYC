@@ -5,7 +5,7 @@
         <div class="bg-center parts-img shadow-lg part-img" :style="{ 'background-image': `url(${img})` }"></div>
       </div>
       <div>
-        <div class="font-bold text-lg">{{title}}</div>
+        <h3 class="font-bold text-lg">{{title}}</h3>
         <div class="text-sm mb-4">{{description}}</div>
         <div class="text-sm underline underline-offset">More Info ></div>
       </div>

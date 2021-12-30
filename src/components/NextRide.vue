@@ -1,6 +1,6 @@
 <template>
   <div class="next-ride-wrapper sm:grid md:flex">
-    <div class="text-3xl sm:text-5xl font-bold mr-4 mb-6">What will be your next ride?</div>
+    <h2 class="text-3xl sm:text-5xl font-bold mr-4 mb-6">What will be your next ride?</h2>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
       <router-link to="/product/xlr">
         <div class="xl-collection-product-square">
