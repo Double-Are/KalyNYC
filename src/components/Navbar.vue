@@ -5,7 +5,7 @@
     <div v-if="bgSolid" class="bg-black absolute w-full h-full z-0"></div>
     <div class="sm:grid flex sm:grid-cols-3 items-center px-8 sm:px-0">
       <div class="z-10 order-2 sm:order-1">
-        <ul class="text-2xl text-gray-100 flex px-8">
+        <ul class="text-lg sm:text-2xl text-gray-100 flex px-8">
           <li class="mr-5">
             <router-link to="/video">Media</router-link>
           </li> 
