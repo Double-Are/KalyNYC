@@ -16,12 +16,12 @@
       </div>
       <div class="flex z-10 sm:justify-self-center order-1 sm:order-2">
         <router-link to="/">
-          <img class="kaly-logo hidden sm:block" :src="Kaly" />
-          <img class="kaly-logo block sm:hidden" :src="KalyOuro" />
+          <img class="kaly-logo hidden sm:block" :src="Kaly" alt="Kaly Logo Full" />
+          <img class="kaly-logo block sm:hidden" :src="KalyOuro" alt="Kaly Logo Icon" />
         </router-link>
       </div>
       <!--<div class="flex place-content-end z-10">
-        <img class="cart-logo" :src="Cart" />
+        <img class="cart-logo" :src="Cart" alt="Cart Icon" />
       </div>-->
     </div>
   </div>  

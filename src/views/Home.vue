@@ -7,8 +7,8 @@
     <Hero />
     
     <!--Large KalyNYC-->
-    <div class="kaly-impact my-10 sm:my-20 mx-auto px-5 sm:px-20 content-max-width">
-      <img :src="KalyNYC" />
+    <div class="kaly-impact my-10 sm:my-20 mx-auto content-max-width">
+      <div class="font-bold text-black text-center">KALY.NYC</div>
     </div>
     
     <!--All XL Boards-->
@@ -73,7 +73,7 @@
     <!--Splash Image-->
     <div class="relative">
       <div class="absolute right-0 text-white text-4xl py-8 px-14 font-bold">Find Your Adventure</div>
-      <img class="w-full" :src="FindYourAdventure" />
+      <img class="w-full" :src="FindYourAdventure" alt="XLR On Cliff" />
     </div>
 
     <!--Parts Accessories-->
@@ -187,7 +187,6 @@ export default {
     line-height: min(max(70px, calc(4.375rem + ((1vw - 3px) * 25.5102))), 320px);
   }
   .impact {
-    text-align: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-font-smoothing: antialiased;

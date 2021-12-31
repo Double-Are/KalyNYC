@@ -5,19 +5,19 @@
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-12 text-white">
         <router-link to="/product/xlr">
           <div class="xl-collection-product-square">
-            <img :src="XLRSquare" />
+            <img :src="XLRSquare" alt="XLR Image" />
             <div class="px-10 py-4 text-2xl md:text-4xl">XL-R</div>
           </div>
         </router-link>
         <router-link to="/product/xl50">
           <div class="xl-collection-product-square">
-            <div><img :src="XL50Square" /></div>
+            <div><img :src="XL50Square" alt="XL50 Image" /></div>
             <div class="px-10 py-4 text-2xl md:text-4xl">XL 50</div>
           </div>
         </router-link>
         <router-link to="/product/xl20">
           <div class="xl-collection-product-square">
-            <img :src="XL20Square" />
+            <img :src="XL20Square" alt="XL2.0 Image" />
             <div class="px-10 py-4 text-2xl md:text-4xl">XL 2.0</div>
           </div>
         </router-link>

@@ -10,12 +10,12 @@
           <div class="text-base lg:text-lg">Designed to satisfy all the requirements of todays riders and pushing the boundaries of what is possible on esk8, gone are the days of compromising and settling for one riding style or another.</div>
         </div>
         <div :style="{ 'background-image': `url(${Limitless})` }"></div>
-        <img :src="Limitless" class="w-full">
+        <img :src="Limitless" class="w-full" alt="Kaly Flag" />
       </div>
 
       <div class="relative">
         <div :style="{ 'background-image': `url(${XL40GIF})` }" class="absolute w-full h-full bg-cover bg-center"></div>
-        <img :src="Skate" class="h-full opacity-0">
+        <img :src="Skate" class="h-full opacity-0" alt="GIF Kaly XL40 Skater" >
       </div>
     </div>
   </div>

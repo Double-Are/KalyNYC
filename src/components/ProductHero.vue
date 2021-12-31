@@ -8,7 +8,7 @@
       <div class="">
         <div class="h-2/3 overflow-hidden">
           <div :style="{ 'background-image': `url(${products[1].src})` }"></div>
-          <img :src="products[1].src" class="w-full">
+          <img :src="products[1].src" class="w-full" :alt="`${board.title} Product Image`" >
         </div>
         <div class="h-1/2 py-4 p-8 sm:pl-0 sm:pr-8">
           <div class="text-sm">XL Collection</div>

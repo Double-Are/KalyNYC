@@ -1,22 +1,22 @@
 <template>
   <div class="next-ride-wrapper sm:grid md:flex">
-    <h2 class="text-3xl sm:text-5xl font-bold mr-4 mb-6">What will be your next ride?</h2>
+    <h2 class="text-3xl sm:text-5xl font-bold mr-4 mb-6">What's your next ride?</h2>
     <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
       <router-link to="/product/xlr">
         <div class="xl-collection-product-square">
-          <img :src="XLRSquare" />
+          <img :src="XLRSquare" alt="XLR Image" />
           <div class="px-10 py-4 text-4xl">XL-R</div>
         </div>
       </router-link>
       <router-link to="/product/xl50">
         <div class="xl-collection-product-square">
-          <div><img :src="XL50Square" /></div>
+          <div><img :src="XL50Square" alt="XL50 Image" /></div>
           <div class="px-10 py-4 text-4xl">XL50</div>
         </div>
       </router-link>
       <router-link to="/product/xl20">
         <div class="xl-collection-product-square">
-          <img :src="XL20Square" />
+          <img :src="XL20Square" alt="XL2.0 Image" />
           <div class="px-10 py-4 text-4xl">XL2.0</div>
         </div>
       </router-link>
