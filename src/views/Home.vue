@@ -179,12 +179,12 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .kaly-impact {
-    font-family: impact;
+    font-family: Impact,Haettenschweiler,Franklin Gothic Bold,Charcoal,Helvetica Inserat,Bitstream Vera Sans Bold,Arial Black,sans serif; 
   }
   .kaly-impact {
     /*font-size: min(max(16px, calc(1rem + ((1vw - 3px) * 25.5294))), 450px);*/
-    font-size: min(max(70px, calc(4.375rem + ((1vw - 3px) * 25.5102))), 320px);
-    line-height: min(max(70px, calc(4.375rem + ((1vw - 3px) * 25.5102))), 320px);
+    font-size: min(max(64px, calc(4rem + ((1vw - 2.8px) * 25.6))), 320px);
+    line-height: min(max(64px, calc(4rem + ((1vw - 2.8px) * 25.6))), 320px);
   }
   .impact {
     -webkit-background-clip: text;
