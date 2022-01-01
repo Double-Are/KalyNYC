@@ -1,9 +1,9 @@
 <template>
   <div class="kalynyc-wrapper w-full">
     <Navbar bgSolid noFixed />
-    <h1 class="opacity-0">Kaly Videos</h1>
-    <div class="p-16">
-      <h2 class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Rides</h2>
+    
+    <div class="px-8 sm:px-20 py-10 sm:py-16">
+      <h1 class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Rides</h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
         <VideoCard v-for="(listing, index) in youtubeRides"  
           v-bind:key="index + 'ride'" 
@@ -11,7 +11,7 @@
       </div>
     </div>
 
-    <div class="px-10 sm:px-20 bg-gray-100 p-16">
+    <div class="px-8 sm:px-20 bg-gray-100 py-10 sm:py-16">
       <h2 class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Interviews</h2>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <VideoCard v-for="(listing, index) in youtubeInterviews"  
@@ -20,7 +20,7 @@
       </div>
     </div>
     
-    <div class="bg-black p-16">
+    <div class="bg-black px-8 sm:px-20 py-10 sm:py-16">
       <ChooseYourRide />
     </div>
   </div>
@@ -52,13 +52,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .kaly-impact {
-    font-family: impact;
-  }
-  .kaly-impact {
-    margin-top: 145px;
-    line-height: min(max(16px, calc(1rem + ((1vw - 3px) * 25.5294))), 450px);
-    font-size: min(max(16px, calc(1rem + ((1vw - 3px) * 25.5294))), 450px);
-    min-height: 0vw;
-  }
 </style>

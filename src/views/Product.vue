@@ -5,47 +5,50 @@
       :products="boards[this.$route.params.product].products" 
       :onClick="() => openKalySite(boards[this.$route.params.product].orderLink, true, kalySite)"/>
 
-    <div class="flex text-7xl justify-center w-full p-8 py-12 font-bold">
+    <div class="flex text-4xl lg:text-7xl justify-center w-full p-4 py-4 sm:py-12 font-bold">
       {{boards[this.$route.params.product].slogan}}
     </div>
     
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 px-10 sm:px-20 content-max-width mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 px-4 sm:px-20 content-max-width mx-auto">
       <div class="text-lg">
         <div class="font-bold mb-4">The Mission</div>
-        <div class="text-2xl">{{boards[this.$route.params.product].description}}</div>
+        <div class="text-lg sm:text-2xl">{{boards[this.$route.params.product].description}}</div>
       </div>
       <div>
         <div class="font-bold">Product Info</div>
         <hr class="my-2" />
         <div>
           <ul>
-            <li class="grid grid-cols-2 mb-2 text-lg">
-              <div>Battery:</div> <div class="justify-self-end font-bold">{{boards[this.$route.params.product].specs.battery.primary}}</div>
+            <li class="grid grid-cols-2 mb-2 text-sm sm:text-lg">
+              <div>Battery:</div> <div class="justify-self-end font-bold text-right">{{boards[this.$route.params.product].specs.battery.primary}}</div>
             </li>
-            <li class="grid grid-cols-2 mb-2 text-lg">
-              <div>Motors:</div> <div class="justify-self-end font-bold">{{boards[this.$route.params.product].specs.motors.primary}}</div>
+            <li class="grid grid-cols-2 mb-2 text-sm sm:text-lg">
+              <div>Motors:</div> <div class="justify-self-end font-bold text-right">{{boards[this.$route.params.product].specs.motors.primary}}</div>
             </li>
-            <li class="grid grid-cols-2 mb-2 text-lg">
-              <div>Range:</div> <div class="justify-self-end font-bold">{{boards[this.$route.params.product].specs.range.primary}}</div>
+            <li class="grid grid-cols-2 mb-2 text-sm sm:text-lg">
+              <div>Range:</div> <div class="justify-self-end font-bold text-right">{{boards[this.$route.params.product].specs.range.primary}}</div>
             </li>
-            <li class="grid grid-cols-2 mb-2 text-lg">
-              <div>Charge Time:</div> <div class="justify-self-end font-bold">{{boards[this.$route.params.product].specs.chargeTime.primary}}</div>
+            <li class="grid grid-cols-2 mb-2 text-sm sm:text-lg">
+              <div>Charge Time:</div> <div class="justify-self-end font-bold text-right">{{boards[this.$route.params.product].specs.chargeTime.primary}}</div>
             </li>
-            <li class="grid grid-cols-2 mb-2 text-lg">
-              <div>Inclination:</div> <div class="justify-self-end font-bold">{{boards[this.$route.params.product].specs.inclination.primary}}</div>
+            <li class="grid grid-cols-2 mb-2 text-sm sm:text-lg">
+              <div>Inclination:</div> <div class="justify-self-end font-bold text-right">{{boards[this.$route.params.product].specs.inclination.primary}}</div>
             </li>
-            <li class="grid grid-cols-2 mb-2 text-lg">
-              <div>Dimensions:</div> <div class="justify-self-end font-bold">{{boards[this.$route.params.product].specs.dimensions.primary}}</div>
+            <li class="grid grid-cols-2 mb-2 text-sm sm:text-lg">
+              <div>Dimensions:</div> <div class="justify-self-end font-bold text-right">{{boards[this.$route.params.product].specs.dimensions.primary}}</div>
             </li>
             <li class="grid grid-cols-1 mb-2 text-sm text-gray-500">
               <div>Additional Infromation / Waiver on Kaly.NYC</div>
+            </li>
+            <li class="grid grid-cols-1 mb-2 text-sm text-gray-500">
+              <a class="font-normal underline text-blue-700" href="https://medium.com/@double_are/kaly-batteries-explained-c69ba280b5ec">Learn About Your Battery</a>
             </li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-10 md:p-20 content-max-width mx-auto">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 p-4 md:p-20 content-max-width mx-auto">
       <div class="w-full">
         <SquareCard v-if="boards[this.$route.params.product].products[2]" class="mb-10" :img="boards[this.$route.params.product].products[2].src" href="" noView/>
         <SquareCard v-if="boards[this.$route.params.product].products[3]" class="mb-10" :img="boards[this.$route.params.product].products[3].src" href="" noView />
@@ -59,7 +62,7 @@
       </div>
     </div>
 
-    <div class="bg-black p-16">
+    <div class="bg-black px-8 sm:px-20 py-10 sm:py-16">
       <ChooseYourRide />
     </div>
 

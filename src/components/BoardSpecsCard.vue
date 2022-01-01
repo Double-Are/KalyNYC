@@ -22,7 +22,7 @@
 
     <div class="grid grid-cols-2">
       <div class="text-2xl font-bold">${{board.price}}</div>
-      <div @click="onClick" class="rounded-full bg-black text-white flex justify-center items-center cursor-pointer">Order Now</div>
+      <router-link :to="board.internalProductPage" class="rounded-full bg-black text-white flex justify-center items-center cursor-pointer">More Info</router-link>
     </div>
   </div>
 </template>

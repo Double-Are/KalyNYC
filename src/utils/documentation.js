@@ -1,4 +1,6 @@
-const youtubeDocumentation = [
+import batteryBlog from '@/assets/blog/carbon-fiber-battery.jpeg'
+
+export const youtubeDocumentation = [
   {
     tags: ['xlr'],
     src: 'https://www.youtube.com/embed/2F5Jxk7grP8',
@@ -27,4 +29,13 @@ const youtubeDocumentation = [
  }, 
 ]
 
-export default youtubeDocumentation
+export const mediumDocumentation = [
+  {
+    tags: ['battery', 'xlr', 'xl50', 'xl20'],
+    img: batteryBlog,
+    src: 'https://medium.com/@double_are/kaly-batteries-explained-c69ba280b5ec',
+    title: 'Kaly Batteries Explained',
+    description: `Series(S) and Parallel(P) batteries — 12S-4P, 12S-8P, and 18S-8P`,
+    creator: 'Darrius Taylor'
+  }
+]

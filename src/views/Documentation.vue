@@ -1,10 +1,9 @@
 <template>
   <div class="kalynyc-wrapper w-full">
     <Navbar bgSolid noFixed />
-    <h1 class="opacity-0">Kaly Documentation</h1>
 
-    <div class="px-10 sm:px-20 bg-gray-100 p-16">
-      <h2 class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Documentation</h2>
+    <div class="px-8 sm:px-20 py-10 sm:py-16">
+      <h1 class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Documentation</h1>
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-8">
         <VideoCardLongDescription v-for="(listing, index) in youtubeDocumentation"  
           v-bind:key="index + 'documentation'" 
@@ -12,7 +11,32 @@
       </div>
     </div>
 
-    <div class="bg-black p-16">
+    <div class="px-8 sm:px-20 bg-gray-100 py-10 sm:py-16">
+      <h1 class="text-2xl md:text-4xl lg:text-7xl font-medium mb-10">Blog Posts</h1>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <a v-for="(listing, index) in mediumDocumentation"
+          :href="listing.src"  
+          target="_blank"
+          v-bind:key="index + 'medium documentation'">
+          <div class="mb-8">
+            <div class="text-sm mb-1 mr-2 font-medium inline-block" v-for="(tag, index) in listing.tags" v-bind:key="index + 'tag'">#{{tag}}</div>
+            <img  
+              class="mb-3 rounded-lg"
+              :src="listing.img" 
+              :alt="`${listing.title} Picture`"
+              />
+            <div class="mt-1 sm:mt-5">
+              <div class="font-bold mb-2 truncate">{{listing.title}}</div>
+              <div class="text-sm font-medium">{{listing.creator}}</div>
+              <div class="text-sm text-gray-500">{{listing.description}}</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    
+
+    <div class="bg-black px-8 sm:px-20 py-10 sm:py-16">
       <ChooseYourRide />
     </div>
   </div>
@@ -21,7 +45,7 @@
 <script>
 import Navbar from '@/components/Navbar'
 import ChooseYourRide from '@/components/ChooseYourRide'
-import youtubeDocumentation from '@/utils/documentation.js'
+import { youtubeDocumentation, mediumDocumentation } from '@/utils/documentation.js'
 import VideoCardLongDescription from '@/components/VideoCardLongDescription'
 
 export default {
@@ -34,7 +58,8 @@ export default {
   },
   data() {
     return {
-      youtubeDocumentation
+      youtubeDocumentation,
+      mediumDocumentation
     }
   },
   methods: {
@@ -51,13 +76,4 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .kaly-impact {
-    font-family: impact;
-  }
-  .kaly-impact {
-    margin-top: 145px;
-    line-height: min(max(16px, calc(1rem + ((1vw - 3px) * 25.5294))), 450px);
-    font-size: min(max(16px, calc(1rem + ((1vw - 3px) * 25.5294))), 450px);
-    min-height: 0vw;
-  }
 </style>

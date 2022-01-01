@@ -28,7 +28,7 @@
 </template>
 
 <script>
-import Kaly from '@/assets/Kaly Logo.png'
+import Kaly from '@/assets/KalyLogo Studio.png'
 import KalyOuro from '@/assets/KalyOuro.webp'
 import Cart from '@/assets/cart.png'
 

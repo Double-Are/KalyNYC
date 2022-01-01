@@ -8,7 +8,7 @@
     
     <!--Large KalyNYC-->
     <div class="kaly-impact my-10 sm:my-20 mx-auto content-max-width">
-      <div class="font-bold text-black text-center">KALY.NYC</div>
+      <h1 class="font-bold text-black text-center">Kaly.NYC</h1>
     </div>
     
     <!--All XL Boards-->
@@ -19,10 +19,12 @@
     <!--XL Boards-->
     <div class="content-max-width mx-auto">
       <div class="mb-16">
-        <BoardView :board="boards.xlr" left :onClick="() => openKalySite(boards.xlr.orderLink, true, kalySite)"/>
+        <BoardView :board="boards.xlr" left />
+        <!--<BoardView :board="boards.xlr" left :onClick="() => openKalySite(boards.xlr.orderLink, true, kalySite)"/>-->
       </div>
       <div class="mb-16">
-        <BoardView :board="boards.xl50" right :onClick="() => openKalySite(boards.xl50.orderLink, true, kalySite)"/>
+        <BoardView :board="boards.xl50" right />
+        <!--<BoardView :board="boards.xl50" right :onClick="() => openKalySite(boards.xl50.orderLink, true, kalySite)"/>-->
       </div>
     </div>
 
@@ -46,7 +48,7 @@
       </div>
     </div>
 
-    <div class="kaly-impact my-5 mb-20 mx-auto content-max-width">
+    <div class="kaly-impact my-5 mb-20 mx-auto content-max-width px-4">
       <div class="impact font-bold bg-cover" :style="{ 'background-image': `url(${KalyTitleGIF}` }">LIMITLESS RIDE</div>
     </div>
 
@@ -183,8 +185,8 @@ export default {
   }
   .kaly-impact {
     /*font-size: min(max(16px, calc(1rem + ((1vw - 3px) * 25.5294))), 450px);*/
-    font-size: min(max(64px, calc(4rem + ((1vw - 2.8px) * 25.6))), 320px);
-    line-height: min(max(64px, calc(4rem + ((1vw - 2.8px) * 25.6))), 320px);
+    font-size: min(max(50px, calc(3.125rem + ((1vw - 2.8px) * 27))), 320px);
+    line-height: min(max(50px, calc(3.125rem + ((1vw - 2.8px) * 27))), 320px);
   }
   .impact {
     -webkit-background-clip: text;

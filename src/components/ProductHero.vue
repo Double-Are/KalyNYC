@@ -6,18 +6,18 @@
       </div>
 
       <div class="">
-        <div class="h-2/3 overflow-hidden">
+        <div class="sm:h-2/3 overflow-hidden">
           <div :style="{ 'background-image': `url(${products[1].src})` }"></div>
           <img :src="products[1].src" class="w-full" :alt="`${board.title} Product Image`" >
         </div>
-        <div class="h-1/2 py-4 p-8 sm:pl-0 sm:pr-8">
+        <div class="h-1/2 py-4 px-4 sm:pl-0 sm:pr-8">
           <div class="text-sm">XL Collection</div>
           <div class="grid grid-cols-2">
             <h3 class="text-4xl font-medium mb-4">{{board.title}}</h3>
             <div class="text-2xl font-bold justify-self-end">${{board.price}}</div>
           </div>
-          <div class="flex justify-end">
-            <a class="rounded-full bg-black text-white flex justify-center py-2 w-1/3 cursor-pointer" @click="onClick" target="_blank">
+          <div class="flex sm:justify-end">
+            <a class="rounded-full bg-black text-white flex justify-center py-2 w-full sm:w-1/3 cursor-pointer" @click="onClick" target="_blank">
               Order Now
             </a>
           </div>
