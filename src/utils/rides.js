@@ -1,6 +1,14 @@
 const youtubeRides = [
   {
     home: true,
+    tags: ['xlr'],
+    src: 'https://www.youtube.com/embed/uz4M635syKk',
+    title: 'Worlds First!!! - Kaly XLR In Depth - Unboxing',
+    description: `Here it is the most impressive skateboard ever!!! The Kaly XLR such an amazing board huge specs and power cant wait to share this one.`,
+    creator: 'Thomas BBoy Stretch'
+  },
+  {
+    home: true,
     tags: ['xl40'],
     src: 'https://www.youtube.com/embed/R2v5_29Rzas',
     title: 'KalyNyc - California Mt Baldy',

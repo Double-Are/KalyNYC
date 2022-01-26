@@ -17,7 +17,7 @@
       <div class="flex z-10 sm:justify-self-center order-1 sm:order-2">
         <router-link to="/">
           <img class="kaly-logo hidden sm:block" :src="Kaly" alt="Kaly Logo Full" />
-          <img class="kaly-logo block sm:hidden" :src="KalyOuro" alt="Kaly Logo Icon" />
+          <img class="kaly-logo-icon block sm:hidden" :src="KalyOuro" alt="Kaly Logo Icon" />
         </router-link>
       </div>
       <!--<div class="flex place-content-end z-10">
@@ -59,11 +59,15 @@ export default {
   }
 
   .kaly-logo {
+    width: 280px;
+    height: auto;
+    max-width: 280px;
+  }
+
+  .kaly-logo-icon {
     max-width: 250px;
     max-height: 64px;
-    min-width: 63px;
-    width: 100%;
-    height: fit-content;
+    min-width: 64px;
   }
 
   .cart-logo {

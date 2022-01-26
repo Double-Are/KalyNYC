@@ -14,7 +14,7 @@
 
       <div class="relative">
         <div :style="{ 'background-image': `url(${XL40GIF})` }" class="absolute w-full h-full bg-cover bg-center"></div>
-        <img :src="Skate" class="h-full opacity-0" alt="GIF Kaly XL40 Skater">
+        <img :src="Limitless" class="opacity-0" alt="GIF Kaly XL40 Skater">
       </div>
     </div>
     <div class="absolute text-white z-20 px-8 bottom-0 py-10 sm:py-20 block sm:hidden font-medium">
@@ -26,7 +26,6 @@
 
 <script>
 import Limitless from '@/assets/Limitless.jpg'
-import Skate from '@/assets/Skate.jpg'
 import XL40GIF from '@/assets/XL40-GIF.gif'
 
 export default {
@@ -35,7 +34,6 @@ export default {
   data() {
     return {
       Limitless,
-      Skate,
       XL40GIF
     }
   }
